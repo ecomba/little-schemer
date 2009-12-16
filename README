@@ -1,0 +1,14 @@
+The Little Schemer
+
+This project is just my run-through The Little Schemer book where I take the questions
+(not all of them) and express them in code.
+
+I have added the test-manager library to be able to do the assertions that I need to do
+to prove that my thoughs where correct.
+
+To run it you will have to:
+
+  * install MIT-Scheme (on a mac just port install it).
+  * type "scheme --load test.scm" on your Terminal
+
+Enrique Comba Riepenhausen
