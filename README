@@ -9,6 +9,6 @@ to prove that my thoughs where correct.
 To run it you will have to:
 
   * install MIT-Scheme (on a mac just port install it).
-  * type "scheme --load test.scm" on your Terminal
+  * type rake 
 
 Enrique Comba Riepenhausen
