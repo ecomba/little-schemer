@@ -1,3 +1,4 @@
+(load "src/rember.scm")
 (in-test-group rember
   (define-each-test
     (assert-equal (rember 'mint '(lamb chops and mint jelly)) 
@@ -13,11 +14,3 @@
     (assert-equal (rember 'and '(bacon lettuce and tomato)) 
                   '(bacon lettuce tomato))
   ))
-
-(define (rember atom lat)
-  (cond
-    ((null? lat) (quote ()))
-    (else (cond
-            ((eq? (car lat) atom) (cdr lat))
-            (else (cons (car lat)
-                        (rember atom (cdr lat))))))))

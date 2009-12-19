@@ -1,3 +1,4 @@
+(load "src/atom.scm")
 (in-test-group atom
   (define-each-test 
     (assert-true (atom? 'Harry))
@@ -9,5 +10,3 @@
     (assert-false (atom? (car (cdr '(swing (low sweet) cherry oat)))))
     (assert-false (atom? ()))
   ))
-
-(define (atom? atom) (and (not (pair? atom)) (not (null? atom))))

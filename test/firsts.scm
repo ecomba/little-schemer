@@ -1,3 +1,4 @@
+(load "src/firsts.scm")
 (in-test-group firsts
   (define-each-test
     (assert-equal (firsts '((apple peach pumpkin)
@@ -10,9 +11,3 @@
     (assert-equal (firsts '(((five plums) four) (eleven green oranges) ((no) more)))
                   '((five plums) eleven (no)))
     ))
-
-(define (firsts l)
-  (cond
-    ((null? l) (quote ()))
-    (else (cons (car (car l))
-                (firsts (cdr l))))))
