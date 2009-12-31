@@ -12,3 +12,4 @@
 (load "test/list-of-atoms.scm")
 (load "test/member.scm")
 (load "test/rember.scm")
+(load "test/insert-r.scm")
